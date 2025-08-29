@@ -201,7 +201,8 @@
         "vlc-plugins-all",
         "partitionmanager",
         "audacity",
-        "fastfetch"
+        "fastfetch",
+        "amd-ucode"
     ],
     "parallel_downloads": 5,
     "profile_config": {
