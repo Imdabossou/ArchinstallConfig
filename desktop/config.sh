@@ -3,7 +3,6 @@ cd ~
 # Install Yay
 yes | sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && yes | makepkg -si
 # Install required packages from Yay
-# Xpadneo seems to be required to fix xbox controller as triggers dont work on default drivers
 yes | yay -S mkinitcpio-firmware konsave epson-inkjet-printer-escpr2 opencl-amd protonup-qt-bin jamesdsp-pipewire-bin rustdesk-bin gemini-cli
 # QEMU virtualization services
 sudo systemctl enable libvirtd
