@@ -202,7 +202,8 @@
         "partitionmanager",
         "audacity",
         "fastfetch",
-        "amd-ucode"
+        "amd-ucode",
+        "exfat-utils"
     ],
     "parallel_downloads": 5,
     "profile_config": {
