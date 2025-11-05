@@ -203,7 +203,9 @@
         "audacity",
         "fastfetch",
         "amd-ucode",
-        "exfat-utils"
+        "exfat-utils",
+        "android-tools",
+        "android-udev"
     ],
     "parallel_downloads": 5,
     "profile_config": {
