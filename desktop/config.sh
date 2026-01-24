@@ -4,6 +4,8 @@ cd ~
 yes | sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && yes | makepkg -si
 # Install required packages from Yay
 yes | yay -S mkinitcpio-firmware konsave epson-inkjet-printer-escpr2 opencl-amd protonup-qt-bin jamesdsp-pipewire-bin rustdesk-bin gemini-cli
+# Required for AMD Video Encoding Handbrake
+yes | yay -S  amf-amdgpu-pro
 # QEMU virtualization services
 sudo systemctl enable libvirtd
 # Printer services
