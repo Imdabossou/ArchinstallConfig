@@ -205,7 +205,10 @@
         "amd-ucode",
         "exfat-utils",
         "android-tools",
-        "android-udev"
+        "android-udev",
+        "bash-language-server",
+        "spellcheck"
+
     ],
     "parallel_downloads": 5,
     "profile_config": {
