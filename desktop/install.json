@@ -163,7 +163,7 @@
         "kdenlive",
         "kio-admin",
         "kio-gdrive",
-        "kmail",
+        "thunderbird",
         "krita",
         "krdp",
         "krdc",
@@ -191,12 +191,8 @@
         "bluez",
         "bluez-utils",
         "dosfstools",
-        "openssl-1.1",
-        "lib32-gtk2",
         "freecad",
         "openscad",
-        "aichat",
-        "prismlauncher",
         "vlc",
         "vlc-plugins-all",
         "partitionmanager",
@@ -205,10 +201,7 @@
         "amd-ucode",
         "exfat-utils",
         "android-tools",
-        "android-udev",
-        "bash-language-server",
-        "spellcheck"
-
+        "android-udev"
     ],
     "parallel_downloads": 5,
     "profile_config": {
