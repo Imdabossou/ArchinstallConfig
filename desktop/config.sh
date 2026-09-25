@@ -10,6 +10,8 @@ yes | yay -S  amf-amdgpu-pro
 sudo systemctl enable libvirtd
 # Printer services
 sudo systemctl enable cups.service
+# DNS
+sudo systemctl enable --now systemd-resolved
 # Power profiles daemon
 sudo systemctl enable --now power-profiles-daemon
 # Download monitor ICM profile
