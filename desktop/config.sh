@@ -16,14 +16,14 @@ sudo systemctl enable --now systemd-resolved
 sudo systemctl enable --now power-profiles-daemon
 # Download monitor ICM profile
 cd ~/Documents/
-curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/EX240N.icm
+curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desktop/EX240N.icm
 # Apply SDDM Wayland
 sudo mkdir /etc/sddm.conf.d/
 cd /etc/sddm.conf.d/
-sudo curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/10-wayland.conf
+sudo curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desktop/10-wayland.conf
 # Konsave KDE config import - if wallpaper and icon does not apply, they are located in ~/.local/share/wallpapers and ~/.local/share/icons
 cd ~/
-curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/arch.knsv
+curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desktop/arch.knsv
 konsave -i arch.knsv
 konsave -a arch
 #OpenRGB Config
