@@ -1,0 +1,25 @@
+# Checks every push to main, and every pull request.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: JSON files parse
+        run: for f in desktop/*.json; do jq empty "$f" && echo "ok $f"; done
+      - name: Shell config
+        run: shellcheck -S error -s bash desktop/config.sh
